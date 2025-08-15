@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: rgb(247, 231, 232);
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #ec95d4;
+            border: 2px solid rgb(152, 3, 75);
+        }
+        .name {
+            font-size: 22px;
+            font-weight: bold;
+             color: rgb(148, 1, 72);
+        }
+        .links {
+            display: flex;
+            gap: 30px;
+        }
+        .links a {
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .links a:hover {
+            color: blue;
+        }
+
+        #heading {
+            text-align: center;
+            font-size: large;
+            margin-top: 20px;
+        }
+
+        .projects-container {
+           display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  justify-items: center; 
+  margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            margin-left: 5px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            border-radius: 8px;
+
+        }
+
+        .card h2 {
+            margin: 10px 0 0 0;
+            font-size: 18px;
+            color: #333;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="menu">
+        <div class="name">Shruti Yewale</div>
+        <div class="links">
+            <a href="index.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="project.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </div>
+    </div>
+
+    <div id="heading">
+        <h2>Projects</h2>
+    </div>
+    <div class="projects-container">
+        <div class="card">
+            <a href="https://shruti388.github.io/weather-final-boss/">
+                <img src="project1.png" alt="Weather App">
+            </a>
+            <h2>Weather App</h2>
+        </div>
+
+        <div class="card">
+            <a href="https://shruti388.github.io/pokemon-Image-Generator/">
+                <img src="project2.png" alt="Pokémon Image Generator">
+            </a>
+            <h2>Pokemon Image Generator</h2>
+        </div>
+
+        <div class="card">
+            <a href="https://shruti388.github.io/Fox-Image-generator/">
+                <img src="project3.png" alt="Fox Image Generator">
+            </a>
+            <h2>Fox Image Generator</h2>
+        </div>
+
+        <div class="card">
+            <a href=" https://shruti388.github.io/vsFinalBoss/">
+                <img src="project4.png" alt="VS Code Clone">
+            </a>
+            <h2>VS Code Clone</h2>
+        </div>
+    </div>
+ <div class="projects-container">
+        <div class="card">
+            <a href="https://shruti388.github.io/dribblefinal/">
+                <img src="project5.png" alt="Dribbble Clone">
+            </a>
+            <h2>Dribbble Clone</h2>
+        </div>
+    <div class="card">
+        <a href="https://weatherappbyshrutiyewale.netlify.app/">
+              <img src="project6.png" alt="Weather App">
+        </a>
+        <h2>Weather App</h2>
+
+    </div>
+    </div>
+
+
+</body>
+</html>
