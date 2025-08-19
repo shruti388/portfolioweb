@@ -71,6 +71,11 @@
       text-align: center;
     }
 
+    .para-wrap {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
     .para-main {
       background: rgb(255, 196, 205);
       width: 520px;
@@ -82,6 +87,8 @@
       text-align: center;
       border: 3px solid rgb(152, 3, 75);
       border-radius: 10px;
+
+      transition: transform 0.3s ease; 
     }
 
     .para-main:hover {
@@ -172,9 +179,13 @@
   </div>
   <h1 class="headline fade-in delay3">Hi, I'm Shruti Yewale</h1>
   <h2 class="headline2 fade-in delay4">Front End Developer</h2>
-  <div class="para-main fade-in delay5">
-    <p>I'm a passionate Front-End Developer with strong interest in creating websites Skilled in HTML, CSS, Javascript,
-      React.js, TailwindCSS and I enjoy turning ideas into interactive designs and always up for learning.</p>
+
+  <div class="para-wrap fade-in delay5">
+    <div class="para-main">
+      <p>I'm a passionate Front-End Developer with strong interest in creating websites Skilled in HTML, CSS,
+        Javascript, React.js, TailwindCSS and I enjoy turning ideas into interactive designs and always up for
+        learning.</p>
+    </div>
   </div>
 </body>
 
