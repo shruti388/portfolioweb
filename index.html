@@ -19,7 +19,7 @@
       padding: 15px;
       background-color: #ec95d4;
       border: 2px solid rgb(152, 3, 75);
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     }
 
     .name {
@@ -31,7 +31,7 @@
     .links {
       display: flex;
       gap: 30px;
-      flex-wrap: wrap; 
+      flex-wrap: wrap;
     }
 
     .links a {
@@ -101,7 +101,7 @@
       }
 
       .para-main {
-        max-width: 95%; 
+        max-width: 95%;
       }
     }
 
@@ -113,14 +113,51 @@
       }
 
       .para-main {
-        max-width: 90%; 
+        max-width: 90%;
       }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .delay1 {
+      animation-delay: 0.3s;
+    }
+
+    .delay2 {
+      animation-delay: 0.6s;
+    }
+
+    .delay3 {
+      animation-delay: 0.9s;
+    }
+
+    .delay4 {
+      animation-delay: 1.2s;
+    }
+
+    .delay5 {
+      animation-delay: 1.5s;
     }
   </style>
 </head>
 
 <body>
-  <div class="menu">
+  <div class="menu fade-in delay1">
     <div class="name">Shruti Yewale</div>
     <div class="links">
       <a href="index.html">About</a>
@@ -130,15 +167,14 @@
     </div>
   </div>
 
-  <div class="photo">
+  <div class="photo fade-in delay2">
     <img src="photo img.jpg" alt="Profile Photo">
   </div>
-  <h1 class="headline">Hi, I'm Shruti Yewale</h1>
-  <h2 class="headline2">Front End Developer</h2>
-  <div class="para-main">
-    <p>I'm a passionate Front-End Developer with strong interest in creating websites Skilled in HTML, CSS,
-      Javascript, React.js, TailwindCSS and I enjoy turning ideas into interactive designs and always up for
-      learning.</p>
+  <h1 class="headline fade-in delay3">Hi, I'm Shruti Yewale</h1>
+  <h2 class="headline2 fade-in delay4">Front End Developer</h2>
+  <div class="para-main fade-in delay5">
+    <p>I'm a passionate Front-End Developer with strong interest in creating websites Skilled in HTML, CSS, Javascript,
+      React.js, TailwindCSS and I enjoy turning ideas into interactive designs and always up for learning.</p>
   </div>
 </body>
 

@@ -241,9 +241,6 @@
       fill: #000;
     }
 
-    /* --------------------
-       Responsive Fixes
-    -------------------- */
     @media (max-width: 768px) {
       #menu {
         flex-direction: column;
@@ -292,142 +289,203 @@
         width: 100%;
       }
     }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .fade-in {
+      opacity: 0;
+      animation: fadeIn 1s ease forwards;
+    }
+
+    .delay1 {
+      animation-delay: 0.3s;
+    }
+
+    .delay2 {
+      animation-delay: 0.6s;
+    }
+
+    .delay3 {
+      animation-delay: 0.9s;
+    }
+
+    .delay4 {
+      animation-delay: 1.2s;
+    }
+
+    .delay5 {
+      animation-delay: 1.5s;
+    }
+
+    .delay6 {
+      animation-delay: 1.8s;
+    }
+
+    .delay7 {
+      animation-delay: 2.1s;
+    }
   </style>
 </head>
 
 <body>
-    <div id="menu">
-        <div id="name">Shruti Yewale</div>
-        <div id="links">
-            <a href="index.html">About</a>
-            <a href="skills.html">Skills</a>
-            <a href="project.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
+  <div id="menu">
+    <div id="name">Shruti Yewale</div>
+    <div id="links">
+      <a href="index.html">About</a>
+      <a href="skills.html">Skills</a>
+      <a href="project.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div id="contact-section">
+    <h2 id="contact-heading" class="fade-in delay1">Contact Information</h2>
+
+    <div id="email-item" class="fade-in delay2">
+      <div id="email-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16z" />
+        </svg>
+      </div>
+      <div id="email-details">
+        <strong id="email-label">Email</strong>
+        <span id="email-text">shrutiyewale219@gmail.com</span>
+      </div>
     </div>
 
-    <div id="contact-section">
-        <h2 id="contact-heading">Contact Information</h2>
-
-        <div id="email-item">
-            <div id="email-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2zm0 2v.01L12 13 4 6.01V6h16z" />
-                </svg>
-            </div>
-            <div id="email-details">
-                <strong id="email-label">Email</strong>
-                <span id="email-text">shrutiyewale219@gmail.com</span>
-            </div>
-        </div>
-
-        <div id="phone-item">
-            <div id="phone-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M6.6 10.8a15.05 15.05 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.36 11.36 0 0 0 3.56.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.19 2.39.56 3.56a1 1 0 0 1-.24 1l-2.22 2.24z" />
-                </svg>
-            </div>
-            <div id="phone-details">
-                <strong id="phone-label">Phone</strong>
-                <span id="phone-text">+91 9325662816</span>
-            </div>
-        </div>
-
-        <div id="location-item">
-            <div id="location-icon">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path
-                        d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
-                </svg>
-            </div>
-            <div id="location-details">
-                <strong id="location-label">Location</strong>
-                <span id="location-text">Pune, Maharashtra, India</span>
-            </div>
-        </div>
+    <div id="phone-item" class="fade-in delay3">
+      <div id="phone-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M6.6 10.8a15.05 15.05 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.36 11.36 0 0 0 3.56.56 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.21.19 2.39.56 3.56a1 1 0 0 1-.24 1l-2.22 2.24z" />
+        </svg>
+      </div>
+      <div id="phone-details">
+        <strong id="phone-label">Phone</strong>
+        <span id="phone-text">+91 9325662816</span>
+      </div>
     </div>
 
-    <section id="contact-section-form">
-        <form id="contact-form">
-            <div id="form-row">
-                <div id="form-group">
-                    <label id="form-label">Name</label>
-                    <input type="text" id="form-input" placeholder="Your name">
-                </div>
-                <div id="form-group">
-                    <label id="form-label">Email</label>
-                    <input type="email" id="form-input" placeholder="Your email">
-                </div>
-            </div>
-
-            <div id="form-group">
-                <label id="form-label">Subject</label>
-                <input type="text" id="form-input" placeholder="Subject of your message">
-            </div>
-
-            <div id="form-group">
-                <label id="form-label">Message</label>
-                <textarea id="form-textarea" placeholder="Type your message here"></textarea>
-            </div>
-
-            <button type="submit" id="form-button">Send Message</button>
-        </form>
-    </section>
+    <div id="location-item" class="fade-in delay4">
+      <div id="location-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+          <path
+            d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z" />
+        </svg>
+      </div>
+      <div id="location-details">
+        <strong id="location-label">Location</strong>
+        <span id="location-text">Pune, Maharashtra, India</span>
+      </div>
     </div>
-    <div class="wrap">
-        <header>
-            <div class="title">
-                <h1 class="name">Shruti Yewale</h1>
-                <p class="tagline">Front-End Developer</p>
-            </div>
+  </div>
+
+  <section id="contact-section-form" class="fade-in delay5">
+    <form id="contact-form" class="fade-in delay6">
+      <div id="form-row">
+        <div id="form-group">
+          <label id="form-label">Name</label>
+          <input type="text" id="form-input" placeholder="Your name">
+        </div>
+        <div id="form-group">
+          <label id="form-label">Email</label>
+          <input type="email" id="form-input" placeholder="Your email">
+        </div>
+      </div>
+
+      <div id="form-group">
+        <label id="form-label">Subject</label>
+        <input type="text" id="form-input" placeholder="Subject of your message">
+      </div>
+
+      <div id="form-group">
+        <label id="form-label">Message</label>
+        <textarea id="form-textarea" placeholder="Type your message here"></textarea>
+      </div>
+
+      <button type="submit" id="form-button">Send Message</button>
+    </form>
+  </section>
+  </div>
+  <div class="wrap fade-in delay7">
+    <header>
+      <div class="title">
+        <h1 class="name">Shruti Yewale</h1>
+        <p class="tagline">Front-End Developer</p>
+      </div>
 
 
-            <nav class="icons">
+      <nav class="icons">
 
-                <a href="https://github.com/">
+        <a href="https://github.com/">
 
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A7B0BE" width="24" height="24">
-                        <path
-                            d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2.02c-3.22.7-3.9-1.4-3.9-1.4-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.74 0-1.27.46-2.31 1.2-3.12-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.21 1.19a11.1 11.1 0 0 1 5.85 0c2.23-1.5 3.2-1.19 3.2-1.19.63 1.59.23 2.77.12 3.06.75.81 1.2 1.85 1.2 3.12 0 4.46-2.71 5.44-5.29 5.73.41.35.78 1.04.78 2.1v3.11c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z" />
-                    </svg>
-                </a>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A7B0BE" width="24" height="24">
+            <path
+              d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.11.79-.25.79-.56v-2.02c-3.22.7-3.9-1.4-3.9-1.4-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.2 1.77 1.2 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.57-.29-5.27-1.29-5.27-5.74 0-1.27.46-2.31 1.2-3.12-.12-.29-.52-1.47.11-3.06 0 0 .98-.31 3.21 1.19a11.1 11.1 0 0 1 5.85 0c2.23-1.5 3.2-1.19 3.2-1.19.63 1.59.23 2.77.12 3.06.75.81 1.2 1.85 1.2 3.12 0 4.46-2.71 5.44-5.29 5.73.41.35.78 1.04.78 2.1v3.11c0 .31.21.68.8.56A11.5 11.5 0 0 0 12 .5z" />
+          </svg>
+        </a>
 
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A7B0BE" width="24" height="24">
-                    <path
-                        d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3.5 9h3v12h-3zM9 9h2.9v1.64h.04c.4-.74 1.37-1.52 2.83-1.52 3.03 0 3.6 1.99 3.6 4.58V21H15.4v-5.35c0-1.28-.02-2.93-1.78-2.93-1.78 0-2.06 1.39-2.06 2.83V21H9z" />
-                </svg>
-                </a>
-            </nav>
-        </header>
-        <hr>
-    </div>
-    <script>
-        const name = document.getElementById("form-input");
-        const email = document.getElementById("form-input");
-        const subject = document.getElementById("form-input");
-        const formbutton = document.getElementById("form-button");
-        const message = document.getElementById("form-textarea");
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#A7B0BE" width="24" height="24">
+          <path
+            d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zM3.5 9h3v12h-3zM9 9h2.9v1.64h.04c.4-.74 1.37-1.52 2.83-1.52 3.03 0 3.6 1.99 3.6 4.58V21H15.4v-5.35c0-1.28-.02-2.93-1.78-2.93-1.78 0-2.06 1.39-2.06 2.83V21H9z" />
+        </svg>
+        </a>
+      </nav>
+    </header>
+    <hr>
+  </div>
+  <script>
+    const name = document.getElementById("form-input");
+    const email = document.getElementById("form-input");
+    const subject = document.getElementById("form-input");
+    const formbutton = document.getElementById("form-button");
+    const message = document.getElementById("form-textarea");
 
-        document.getElementById("contact-form").addEventListener("submit", (e) => {
-            e.preventDefault();
+    document.getElementById("contact-form").addEventListener("submit", (e) => {
+      e.preventDefault();
 
-            const name = document.getElementById("form-input").value;
-            const email = document.getElementById("form-input").value;
-            const subject = document.getElementById("form-input").value;
-            const message = document.getElementById("form-textarea").value;
+      const name = document.getElementById("form-input").value;
+      const email = document.getElementById("form-input").value;
+      const subject = document.getElementById("form-input").value;
+      const message = document.getElementById("form-textarea").value;
 
-            if (!name || !email || !subject || !message) {
-                alert("Please fill the fields");
-            } else {
-                alert("Form submitted succesfully!");
-            }
-        });
-    </script>
+      if (!name || !email || !subject || !message) {
+        alert("Please fill the fields");
+      } else {
+        alert("Form submitted succesfully!");
+      }
+    });
+  </script>
 
 
 
 </body>
 
-</html> 
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
